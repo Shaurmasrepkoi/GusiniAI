@@ -16,6 +16,11 @@ A modern AI assistant powered by Google Gemini with a custom FastAPI backend and
 </p>
 
 
+## ⭐ Live Demo
+
+https://shaurmasrepkoi.github.io/GusiniAI/
+
+
 ## ✨ About
 
 **GusiniAI** is a personal AI assistant built from scratch using Python and Google Gemini.
