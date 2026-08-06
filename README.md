@@ -82,7 +82,7 @@ GusiniAI/
 ├── README.md
 ├── LICENSE
 └── .gitignore
-
+```
 
 ## 🛠️ Technologies
 
@@ -113,7 +113,7 @@ GusiniAI/
 ### 1. Clone repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/GusiniAI.git
+git clone https://github.com/Shaurmasrepkoi/GusiniAI.git
 
 cd GusiniAI
 ```
