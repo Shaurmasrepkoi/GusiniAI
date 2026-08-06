@@ -62,42 +62,48 @@ The goal of GusiniAI is to create a clean, fast and extensible AI assistant arch
 
 
 ## 🏗️ Project Structure
+
+```text
 GusiniAI/
 
 ├── backend/
 │
-│ ├── main.py # FastAPI application
-│ ├── gemini_client.py # Gemini API integration
-│ ├── db.py # Database models and queries
-│ ├── config.py # Configuration
-│ ├── requirements.txt # Dependencies
-│ └── .env.example # Environment template
+│   ├── main.py
+│   ├── gemini_client.py
+│   ├── db.py
+│   ├── config.py
+│   ├── requirements.txt
+│   └── .env.example
 │
 ├── frontend/
 │
-│ └── index.html # Web interface
+│   └── index.html
 │
 ├── README.md
 ├── LICENSE
 └── .gitignore
 
 
-
 ## 🛠️ Technologies
 
 ### Frontend
+
 - HTML
 - CSS
 - JavaScript
 - Markdown rendering
 
+
 ### Backend
+
 - Python
 - FastAPI
 - SQLAlchemy
 - Google Gemini API
 
+
 ### Database
+
 - SQLite
 
 
@@ -110,84 +116,141 @@ GusiniAI/
 git clone https://github.com/YOUR_USERNAME/GusiniAI.git
 
 cd GusiniAI
+```
 
-2. Create virtual environment
+
+### 2. Create virtual environment
+
+```bash
 python -m venv .venv
+```
+
 
 Activate:
 
 Windows:
 
+```bash
 .venv\Scripts\activate
+```
 
 Linux / macOS:
 
+```bash
 source .venv/bin/activate
-3. Install dependencies
+```
+
+
+### 3. Install dependencies
+
+```bash
 pip install -r backend/requirements.txt
-4. Configure environment variables
+```
+
+
+### 4. Configure environment variables
 
 Create:
 
+```text
 backend/.env
+```
 
 Add your Gemini API key:
 
+```env
 API_KEY=your_gemini_api_key
-5. Run backend
+```
+
+
+### 5. Run backend
+
+```bash
 cd backend
 
 uvicorn main:app --reload
+```
+
 
 The API will start at:
 
+```text
 http://localhost:8000
-6. Run frontend
+```
+
+
+### 6. Run frontend
 
 Open:
 
+```text
 frontend/index.html
+```
 
 or use a local web server.
 
-🔌 API Endpoints
-Get chat history
+
+## 🔌 API Endpoints
+
+
+### Get chat history
+
+```http
 GET /requests
-Send message
+```
+
+
+### Send message
+
+```http
 POST /requests
+```
+
 
 Example:
 
+```json
 {
   "prompt": "Explain Python decorators"
 }
+```
+
 
 Response:
 
+```json
 {
   "answer": "..."
 }
-🗺️ Roadmap
- Gemini integration
- FastAPI backend
- Chat history
- Modern UI
- Markdown rendering
- Copy messages
+```
+
+
+## 🗺️ Roadmap
+
+- [x] Gemini integration
+- [x] FastAPI backend
+- [x] Chat history
+- [x] Modern UI
+- [x] Markdown rendering
+- [x] Copy messages
 
 Future:
 
- Streaming responses
- User authentication
- PostgreSQL support
- Docker deployment
- Public cloud deployment
-📄 License
+- [ ] Streaming responses
+- [ ] User authentication
+- [ ] PostgreSQL support
+- [ ] Docker deployment
+- [ ] Public cloud deployment
+
+
+## 📄 License
 
 This project is licensed under the MIT License.
 
-👨‍💻 Author
 
-Created by Max Repka
+## 👨‍💻 Author
+
+Created by **Max Repka**
+
 
 ⭐ If you find this project interesting, consider giving it a star!
