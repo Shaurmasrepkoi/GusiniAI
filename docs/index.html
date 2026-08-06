@@ -832,31 +832,31 @@ button {
 
 <div class="empty-state" id="emptyState">
 
-    <h1>Assistant</h1>
+    <h1>Gusini AI</h1>
 
-    <p>Чем я могу помочь сегодня?</p>
+    <p>How can I help you today?</p>
 
 
     <div class="suggestions">
 
 
         <div class="suggestion">
-            💻 Написать код
+            💻 Write some code
         </div>
 
 
         <div class="suggestion">
-            🐞 Объяснить ошибку
+            🐞 Explain the error
         </div>
 
 
         <div class="suggestion">
-            🌐 Перевести текст
+            🌐 Translate the text
         </div>
 
 
         <div class="suggestion">
-            💡 Придумать идею
+            💡 Come up with an idea
         </div>
 
 
@@ -875,7 +875,7 @@ button {
 
 <textarea
 id="prompt"
-placeholder="Введите сообщение..."
+placeholder="Enter your message..."
 rows="1"></textarea>
 
 
@@ -1223,7 +1223,7 @@ item.response,
 catch(e){
 
 console.log(
-"История недоступна"
+"The history is not available"
 );
 
 }
@@ -1274,7 +1274,7 @@ stopped=false;
 
 
 
-sendButton.textContent="■ Стоп";
+sendButton.textContent="■ Stop";
 
 
 sendButton.classList.add("stop");
@@ -1361,7 +1361,7 @@ loading.remove();
 if(stopped){
 
 addMessage(
-"Генерация остановлена",
+"Generation has been stopped",
 "assistant"
 );
 
@@ -1387,7 +1387,7 @@ else{
 
 
 showError(
-"Пустой ответ сервера"
+"Empty server response"
 );
 
 
@@ -1407,7 +1407,7 @@ loading.remove();
 
 
 showError(
-"Ошибка подключения к серверу"
+"Error connecting to the server"
 );
 
 
